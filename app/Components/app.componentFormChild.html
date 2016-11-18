@@ -1,0 +1,14 @@
+<h2>Access Child Components From the Template</h2>
+<section >
+	<form #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
+		<label for="name">Name</label>
+			<input type="text" name="name" id="name" ngModel>
+
+			<label for="message">Message</label>
+			<input type="text" name="message" id="message" ngModel>
+			<button type="submit">Submit</button>
+	</form>
+	Form Json: {{formValue}}<br>
+	Form Name: {{formName}}<br>
+	Form Message: {{formMessage}} 
+</section>
