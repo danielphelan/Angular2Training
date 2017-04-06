@@ -6,7 +6,8 @@ template: `
 <div>
 <h2>Handling an Event</h2>
 <p>Count: {{ num }}</p>
-<button (click)="increment()">Increment</button>
+<button (click)="increment()">Increase</button>
+<button (click)="decrease()">Decrease</button>
 </div>
 `
 })
@@ -16,5 +17,9 @@ export class Counter {
 	
 	increment() {
 	this.num++;
+}
+	
+	decrease() {
+	this.num--;
 	}
 }
